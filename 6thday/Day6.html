@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<style>
+
+    body{
+        margin: 0;
+    }
+    header{
+        height: 2%;
+        width: 100%;
+        border: 2px solid darkgreen;
+        position: relative;
+        box-shadow: darkgreen 10px 10px 10px;
+        margin: 0;
+
+    }
+
+    header>div>img{
+        height: 4vw;
+        width: 15vw;
+        left: 0;
+    }
+
+    @media all and (max-width: 1000px){
+        header>div>img{
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+    }
+
+    header>nav{
+        height: fit-content;  /* athule tiyena text eka madata enawa*/
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 20px;
+        margin: auto;
+    }
+    @media all and (max-width: 1000px){
+        header>nav{
+            display: none;
+        }
+    }
+
+    header>nav>ul>li{
+        display: inline;
+        margin-left: 20px;
+
+    }
+
+
+    section:first-child>div{
+
+        color: black;
+        font-size: 5vw;
+        font-family: "Klee One", cursive;
+        font-weight: 400;
+        font-style: normal;
+        left: 15%;
+        bottom: 25%;
+        position: absolute;
+
+    }
+
+
+    section:first-child>img{
+        right: 10%;
+        bottom: 10%;
+        width: 30vw ;
+        height: 28vw;
+
+        position: absolute;
+    }
+
+
+    #cv{
+        width: 8vw;
+        height: 2vw;
+        border-color: darkgreen;
+        border-radius: 5vw;
+        font-size: small;
+        font-family: "Klee One", cursive;
+        font-weight: 400;
+        font-style: normal;
+        box-shadow: 10px 10px 10px darkgreen;
+        background: linear-gradient(to right, green 1%,darkgreen 100%,white 100%);
+        color: white;
+        left: 25%;
+        bottom: 10%;
+        position: absolute;
+
+    }
+
+
+    #about{
+        width: 25vw;
+        height: 15vw;
+        bottom: -60%;
+        left: 10%;
+        position: absolute;
+    }
+
+    section:nth-child(2){
+        position: relative;
+    }
+
+    #section2>h2{
+        left: 10%;
+        bottom: -20%;
+        position: absolute;
+    }
+
+    #section2>p{
+        left: 40%;
+        bottom: -50%;
+        position: absolute;
+    }
+
+
+
+    #section3>h2{
+        left: 10%;
+        bottom: -80%;
+        position: absolute;
+    }
+
+    #project01{
+        width: 10vw;
+        height: 10vw;
+        color: white;
+        font-size: large;
+        font-family: "Klee One", cursive;
+        background-color: darkgreen;
+        bottom: -110%;
+        border-radius: 15%;
+        text-align: center;
+        left: 10%;
+        align-self: start;
+        box-shadow: 10px 10px 10px black;
+        position: absolute;
+    }
+    #project02{
+        width: 10vw;
+        height: 10vw;
+        color: white;
+        font-size: large;
+        font-family: "Klee One", cursive;
+        background-color: darkgreen;
+        bottom: -110%;
+        left: 45%;
+        align-self: start;
+        text-align: center;
+        border-radius: 15%;
+        box-shadow: 10px 10px 10px black;
+        position: absolute;
+    }
+
+    #project03{
+        width: 10vw;
+        height: 10vw;
+        color: white;
+        font-size: large;
+        font-family: "Klee One", cursive;
+        background-color: darkgreen;
+        bottom: -110%;
+        left: 80%;
+        align-self: start;
+        text-align: center;
+        border-radius: 15%;
+        box-shadow: 10px 10px 10px black;
+        position: absolute;
+    }
+
+    #section4>h2{
+        left: 10%;
+        bottom: -130%;
+        position: absolute;
+    }
+
+    #fn{
+        bottom: -145%;
+        left: 10%;
+        position: absolute;
+    }
+
+    #in1{
+        bottom: -150%;
+        left: 10%;
+        position: absolute;
+    }
+
+    #email{
+        bottom: -165%;
+        left: 10%;
+        position: absolute;
+    }
+
+    #in2{
+        bottom: -170%;
+        left: 10%;
+        position: absolute;
+    }
+
+    #mg{
+        bottom: -185%;
+        left: 10%;
+        position: absolute;
+    }
+
+    #in3{
+        bottom: -190%;
+        left: 10%;
+        position: absolute;
+    }
+
+    #send{
+        bottom: -190%;
+        left: 25%;
+        position: absolute;
+        background-color: darkgreen;
+        border-color: darkgreen;
+        box-shadow: black 10px 10px 10px;
+        color: white;
+    }
+
+
+    #section5>div{
+        width: 100%;
+        height: 5vw;
+        background-color: black;
+        bottom: -210%;
+        position: absolute;
+    }
+
+    #fb{
+        width: 3vw;
+        height: 3vw;
+        bottom:  24%;
+        right: 20%;
+        position: absolute;
+    }
+    #ig{
+        width: 3vw;
+        height: 3vw;
+        bottom: 24%;
+        right: 15%;
+        position: absolute;
+    }
+    #git{
+        width: 2.5vw;
+        height: 2.5vw;
+        bottom: 27%;
+        right: 10%;
+        position: absolute;
+    }
+    #link{
+        width: 3vw;
+        height: 3vw;
+        bottom: 24%;
+        right: 5%;
+        position: absolute;
+    }
+
+    h6{
+        color: white;
+        font-size: small;
+        bottom: -20%;
+        left: 5%;
+        position: absolute;
+        font-family: "Klee One", cursive;
+    }
+</style>
+
+
+
+
+
+<body>
+
+<header>
+    <div>< height="102" width="350"/> </div>
+
+
+    <!-- navigation Section-->
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Service</li>
+            <li>Contact</li>
+            <li>About Us</li>
+        </ul>
+    </nav>
+
+</header>
+
+
+<!--homepage-->
+
+<main>
+
+    <section id="section1">
+
+        <div>HIII <br> I AM <br> THUSHINI</div>
+
+        <button id="cv">Cv</button>
+
+        <img src="assests/images/WhatsApp%20Image%202024-08-23%20at%2020.38.03.jpeg" alt="Thushini's Profile Picture"  height="577"
+             width="433"/>
+
+    </section>
+
+</main>
+
+
+
+<section id="section2">
+
+    <h2>ABOUT</h2>
+
+    <img id="about" src="ASSERT/logoijse2.png">
+
+    <P> Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consequatur debitis doloremque iure minima nam, natus, obcaecati quisquam saepe soluta temporibus vel. Amet architecto blanditiis eius molestias mollitia quod sequi. </P>
+
+</section>
+
+
+<section id="section3">
+
+    <h2>Project</h2>
+
+    <div id="project01">Project 01
+    </div>
+
+    <div id="project02">Project 02
+    </div>
+
+    <div id="project03">Project 03
+    </div>
+</section>
+
+
+<section id="section4">
+
+    <h2>Contact</h2>
+
+
+    <h5 id="fn">First Name</h5>
+    <input type="text" name="First Name" id="in1">
+
+    <h5 id="email">Email</h5>
+    <input type="email" name="email" id="in2">
+
+    <h5 id="mg">Maasage</h5>
+    <input type="text" name="Massage" id="in3">
+
+    <button id="send">send Massage</button>
+
+
+
+</section>
+
+<section id="section5">
+
+    <div id="contact">
+        <img src="ASSERT/icons8-facebook-48.png" id="fb">
+        <img src="ASSERT/icons8-instagram-48.png" id="ig">
+        <img src="ASSERT/icons8-github-24.png" id="git" >
+        <img src="ASSERT/icons8-linkedin-48.png" id="link" >
+        <h6> @IJSE ,
+            ijse123@gmail.com <br>
+            038-2256 890 </h6>
+    </div>
+
+
+
+</section>
+</body>
+</html>

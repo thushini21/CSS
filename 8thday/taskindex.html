@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../Assignment%2003/Style/CSS.css">
+    <title>Title</title>
+    <style>
+
+        body{
+            overflow: hidden;
+        }
+
+        section{
+
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+
+        }
+        section>div{
+            text-align: center;
+            background-color: darkgrey;
+            border-radius: 5%;
+            margin: 10px;
+            padding: 20px;
+
+        }
+
+        @media all and (min-width: 500px) and (max-width: 1000px) {
+            section{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+            }
+
+        }
+        @media all and (max-width: 500px) {
+            section{
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+            }
+
+        }
+    </style>
+
+
+</head>
+
+
+<body>
+<section>
+    <div>
+        <h1>card 01</h1>
+
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Animi aspernatur, commodi
+        doloremque earum magnam<br>
+
+
+        <button>Explore😊</button>
+
+    </div>
+    <div>
+        <h1>card 02</h1>
+
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Animi aspernatur, commodi
+        doloremque earum magnam<br>
+
+        <button>Explore😊</button>
+    </div>
+    <div>
+        <h1>card 03</h1>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Animi aspernatur, commodi
+        doloremque earum magnam <br>
+        <button>Explore😊</button>
+    </div>
+    <div>
+        <h1>card 04</h1>
+
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Animi aspernatur, commodi
+        doloremque earum magnam<br>
+
+        <button>Explore😊</button>
+    </div>
+</section>
+</body>
+</html>

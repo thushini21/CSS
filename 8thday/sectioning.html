@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sectioning</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--image -->
+
+<img src="assets\images\large.jpg" title="Apple iphone" alt="iphone 14 pro" width="600">
+
+<!-- picture -->
+
+<picture>
+
+    <source srcset="(min-width: 1000px)" srcset="assets/images/large.jpg">
+    <source srcset="(min-width: 800px)" media="assets/images/medium.jpg">
+    <img src="assets/images/small.jpg" title="Apple iphone" alt="iphone 14 pro">
+</picture>
+
+<!-- video -->
+
+<video src="assets/videos/car.mp4"
+       muted
+       autoplay
+       loop
+       controls
+       poster="assests/images/WhatsApp%20Image%202024-08-24%20at%2015.57.51(1).jpeg"
+       width="700"
+       height="400"
+
+>
+    <source src="assets/videos/car.mp4" type="video/mp4">
+    <source src="assets/videos/car.webm" type="video/webm">
+
+    <!-- track -->
+
+    <track label="English" kind="subtitles" src="assets/subtitle/subtitles/sample.vtt" srclang="en">
+    <track label="Arabic" kind="subtitles" src="assets/subtitle/subtitles/arabic.vtt" srclang="ar">
+
+
+</video>
+
+<!-- audio -->
+
+<audio controls>
+
+    <source src="assets/audios/audio_file1.mp3" type="audio/mp3">
+
+</audio>
+
+<form>
+
+    <!-- text input -->
+
+    <input type="text">
+
+    <br>    <!--line breaks -->
+    <br>    <!--line breaks -->
+
+    <!-- password input -->
+
+    <input type="password">
+
+    <br>
+    <br>
+
+    <!-- email input -->
+
+    <input type="email">
+
+    <br>
+    <br>
+
+    <!-- button input -->
+
+    <input type="button" value="Click">
+
+    <br>
+    <br>
+
+    <!-- checkbox input -->
+
+    <input type="checkbox">
+
+    <br>
+    <br>
+
+    <!-- radio button input -->
+
+    <input type="radio">
+
+    <br>
+    <br>
+
+    <!-- color input -->
+
+    <input type="color">        <!-- can be used to choose color -->
+
+    <br>
+    <br>
+
+    <!-- date picker -->
+
+    <input type="date"  min="2024-06-15"    max="2024-07-13">
+
+    <br>
+    <br>
+
+    <!-- date-time picker -->
+
+    <input type="datetime-local"    min="2024-06-15"    max="2024-07-13">
+
+    <br>
+    <br>
+
+    <!-- month  picker -->
+
+    <input type="month">
+
+    <br>
+    <br>
+
+    <!-- week  picker -->
+
+    <input type="week">
+
+    <br>
+    <br>
+
+    <!-- time  picker -->
+
+    <input type="time">
+
+    <br>
+    <br>
+
+    <!-- number input -->
+
+    <input type="number">       <!-- only numbers can be entered -->
+
+    <br>
+    <br>
+
+    <!--search input -->
+
+    <input type="search">
+
+    <!-- url input -->
+
+    <input type="url">
+
+    <br>
+    <br>
+
+    <!-- tel input -->
+
+    <input type="tel">
+
+    <br>
+    <br>
+
+    <!-- range picker -->
+
+    <input type="range" min="0" max="100">
+
+    <br>
+    <br>
+
+    <!-- file input -->
+
+    <input type="file">
+
+    <br>
+    <br>
+
+    <!-- image input -->
+
+    <input type="image" src="assets/images/large.jpg"   alt="image">
+
+    <br>
+    <br>
+
+    <!-- hidden input -->
+
+    <input type="hidden" value="hidden_value">      <!-- no one can see this -->
+
+    <br>
+    <br>
+
+    <!-- button -->
+
+    <input type="button" value="Button">
+    <input type="reset" value="Reset">
+    <input type="submit" value="Submit">
+
+
+    <!-- /////////////////////////////////// Label ////////////////////////////////// -->
+
+    <br>
+    <br>
+
+    <label for="first-name">First Name</label>    <br>
+    <input type="text"  id="first-name 1" placeholder="Enter Your First Name">    <br><br>
+
+    <label for="last-name">Last Name</label>    <br>
+    <input type="text"  id="last-name 1"  placeholder="Enter Your Last Name">    <br><br>
+
+    <label for="message">Message</label>    <br>
+    <textarea
+            placeholder="Enter your message"
+            id="message 1"
+            rows="10"
+            cols="100"
+    ></textarea>             <!-- "rows" can adjust default height  and "cols" can adjust default length-->
+
+    <br>
+    <br>
+
+    <label for="program">Program</label>
+    <select id="program 1">
+        <option value="">Select your Program</option>
+        <option value="p1">Java SE</option>
+        <option value="p2">Java EE</option>
+        <option value="p3">Spring boot</option>
+        <option value="p4">NodeJs</option>
+        <option value="p5">GO</option>
+        <option value="p6">Perl</option>
+    </select>
+
+</form>
+
+<hr>
+
+<form action="test.html" method="post">
+
+    <h1>Student Form</h1>
+
+    <label for="first-name">First Name</label> <br>
+    <input type="text" name="fname" id="first-name" placeholder="Enter your first name"> <br><br>
+
+    <label for="last-name">Last Name</label> <br>
+    <input type="text" name="lname" id="last-name" placeholder="Enter your last name"> <br><br>
+
+    <label for="message">Message</label> <br>
+    <textarea
+            name="message"
+            placeholder="Enter your message"
+            id="message"
+            rows="10"
+            cols="100"
+    ></textarea>
+
+    <br><br>
+
+    <label for="program">Program</label> <br>
+
+    <select id="program" name="program">
+        <option value="">Select your program</option>
+
+        <optgroup label="Backend Technologies">
+
+            <option value="p1">Java SE</option>
+            <option value="p2">Java EE</option>
+            <option value="p3">Spring boot</option>
+            <option value="p4">NodeJs</option>
+            <option value="p5">GO</option>
+            <option value="p6">Perl</option>
+
+        </optgroup>
+
+
+        <optgroup label="Frontend Technologies">
+
+            <option value="p7">Java Script</option>
+            <option value="p8">HTML & CSS</option>
+            <option value="p9">Angular</option>
+            <option value="p10">ReactJS</option>
+
+        </optgroup>
+
+
+    </select>
+
+    <br><br>
+
+
+    <label>Payment Type</label> <br>
+
+    <fieldset>
+
+        <legend>Select Payment</legend>
+        <input type="radio" name="payment" id="onetime" value="one-time-pay"> <label for="onetime">One Time Payment</label>     <br>
+
+        <input type="radio" name="payment" id="monthly" value="monthly-pay"> <label for="onetime">Monthly Payment</label>
+
+    </fieldset>
+
+    <br><br>
+
+    <input type="text"  list="developer"    name="developer">
+
+    <datalist id="developer">
+        <option value="Frontend-developer">Frontend Developer</option>
+        <option value="Backend-developer">Backend Developer</option>
+        <option value="uiux">QA</option>
+        <option value="ba">BA</option>
+    </datalist>
+
+
+    <br><br>
+
+    <!--
+        button
+        submit
+        reset
+             -->
+
+    <button type="button">Click</button>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+
+    <br><br>
+
+</form>
+
+
+<hr>
+
+<br><br>
+
+<form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+
+    <input type="number"    id="a"  name="a">
+    <input type="number"    id="b"  name="b">
+
+    <output name="result"   for="a b">0</output>
+
+</form>
+
+<ol type="I">            <!--ol = Ordered list -->
+    <li>Java</li>           <!-- li = List Item -->
+    <li>Python</li>
+    <li>GO</li>
+    <li>C++</li>
+
+</ol>
+
+<ul type="circle">            <!--ul = Unordered list -->
+    <li>Java</li>           <!-- li = List Item -->
+    <li>Python</li>
+    <li>GO</li>
+    <li>C++</li>
+</ul>
+
+<dl>      <!-- dl = discription List -->
+    <dt>Asia</dt>               <!-- dt = Discription title-->
+    <dd>Sri Lanka</dd>          <!-- dd = Discription data -->
+    <dd>China</dd>
+    <dd>Japan</dd>
+
+    <dt>Europe</dt>
+    <dd>Germany</dd>
+    <dd>Italy</dd>
+
+</dl>
+
+<hr> <br><br>
+
+<ol type="1">            <!--ol = Ordered list -->
+    <li>Java</li>           <!-- li = List Item -->
+    <li>Python</li>
+    <li>GO</li>
+    <li>C++</li>
+    <li>Internet Technologies</li>
+
+    <ol>
+        <li>HTML</li>           <!-- li = List Item -->
+        <li>CSS</li>
+        <li>JS</li>
+
+        <ul>            <!--ul = Unordered list -->
+            <li>Core JavaScript</li>           <!-- li = List Item -->
+            <li>JQuery</li>
+            <li>Angular</li>
+            <li>React</li>
+            <li>Vue</li>
+        </ul>
+        <li>UI UX</li>
+    </ol>
+</ol>
+
+
+</body>
+</html>
+</body>
+</html>

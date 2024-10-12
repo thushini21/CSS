@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Function</title>
+</head>
+<body>
+
+<script>
+    // Named Function
+    function myFunction(i, x) {
+        let total = i + x;
+        console.log("Sum: ", total);
+    }
+    myFunction(1, 2);
+
+    // Function Expressions
+    const myFunction2 = function (number1, number2) {
+        console.log("My Function 2");
+        console.log("Sum: ", number1 + number2);
+    }
+    myFunction2(4, 6);
+
+    // Function Constructor
+    const myFunction3 = new Function('arg1', 'arg2', 'return arg1 + arg2');
+    let result = myFunction3(3, 4);
+    console.log("Result: ", result);
+
+    // Arrow Function
+    const myArrowFunction = (a, b) => {
+        console.log("my Arrow Function");
+        console.log("Sum: ", a + b);
+    }
+    myArrowFunction(30, 40);
+
+
+      //Annonumus Function//
+
+
+    document.getElementById("myBtn").addEventListener('click', function ()  {
+
+    })
+
+    //Annonumus Function
+
+    document.getElementById("myBtn").addEventListener('click', () => {
+
+    })
+
+</script>
+
+</body>
+</html>

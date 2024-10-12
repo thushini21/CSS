@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flexex</title>
+
+  <style>
+      section {
+          width: 1400px;
+          height: 600px;
+          border: 2px solid red;
+
+         display:  flex;
+          justify-content: space-around;
+      }
+
+      section>div {
+          width: 200px;
+          height: 200px;
+          background: plum;
+          box-shadow: 10px 10px 20px 10px pink;
+
+      }
+
+  section>div:first-child{
+  }
+
+      section>div:nth-child(2) {
+          align-self: center;
+          background: lightpink;
+          box-shadow: 10px 10px 20px 10px lemonchiffon;
+      }
+      section>div:nth-child(3) {
+        align-self: end;
+          background: mediumvioletred;
+          box-shadow: 10px 10px 20px 10px lightskyblue;
+        }
+      section>div:nth-child(4) {
+              align-self: center;
+          background: darksalmon;
+          box-shadow: 10px 10px 20px 10px darkviolet;
+          }
+      section>div:nth-child(5) {
+          background: lightcoral;
+          box-shadow: 10px 10px 20px 10px lightpink;
+            }
+      section>div:nth-child(6) {
+          align-self: center;
+          background: deeppink;
+          box-shadow: 10px 10px 20px 10px lightpink;
+      }
+
+
+
+  </style>
+</head>
+<body>
+
+    <section>
+
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+
+  </section>
+
+</body>
+</html>
